@@ -28,4 +28,8 @@ jobs:
       - uses: actions/checkout@master
       - run: mv secrets.yaml.tmpl secrets.yaml
       - uses: kpucynski/action-ha-config-check@master
+        with:
+          ha_version: "latest"
+        env:
+          HASS_EXTRA_ARGS: "-f -s -i"
 ```
