@@ -1,19 +1,22 @@
 # Home Assistant config check action
 
-This action check Home Assistant configuration.
+This action checks Home Assistant configuration against specified HA version.
 
 ## Usage
 
 Please refer to: https://www.home-assistant.io/docs/tools/check_config/
+Additional parameters for `hass` can be suppied by `HASS_EXTRA_ARGS` env.
+Home Assistant version can be supplied using `ha_version` parameter (defaults to `latest`).
 
 ## Configuration
 
-Configuration must be placed in repository root or set by CONFIG_PATH env.
+It checks configuration placed in repository root.
+You can override config placement using `CONFIG_PATH` env.
 
 ## Secrets
 
-If you use secrets from outside repository, create dummy file, e.g. `secrets.yaml.tmpl`
-and change its name before build.
+If you use secrets in configuration which are not included in the repository,
+you will have to create dummy file, e.g. `secrets.yaml.tmpl` and change its name before build (check example usage).
 
 ## Example usage
 
