@@ -1,5 +1,9 @@
-name: 'Home-Assistant Config Check'
-description: 'Check HA config'
+name: 'Config Checker for Home Assistant'
+description: 'Checks Home Assistant configuration against specified HA version'
+author: 'Karol Pucynski'
+branding:
+  color: yellow
+  icon: home
 inputs:
   ha_version:
     description: 'HA version to use'
