@@ -1,0 +1,5 @@
+name: 'Home-Assistant Config Check'
+description: 'Check HA config'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
