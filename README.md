@@ -5,6 +5,7 @@ This action checks Home Assistant configuration against specified HA version.
 ## Usage
 
 Please refer to: https://www.home-assistant.io/docs/tools/check_config/
+
 Additional parameters for `hass` can be suppied by `HASS_EXTRA_ARGS` env.
 Home Assistant version can be supplied using `ha_version` parameter (defaults to `latest`).
 
